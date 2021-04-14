@@ -1,3 +1,2 @@
-# cookie-stand
+# cookies-locations
 
-## NOT MY code!
