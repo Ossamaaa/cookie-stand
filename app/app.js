@@ -97,8 +97,6 @@ divPerant.appendChild(tableElement);
 
 
 
-
-
 function first() {
 
 
@@ -118,7 +116,7 @@ function first() {
 
   let thfElement = document.createElement('th');
   trElement.appendChild(thfElement);
-  thfElement.textContent = "Daily location /Total";
+  thfElement.textContent = " location /Total";
 }
 
 first();
@@ -187,6 +185,38 @@ Location.prototype.final = function () {
 
 
 }
-
-
 lima.final();
+
+
+
+
+
+
+const form = document.getElementById('CookesSales');
+
+  form.addEventListener('submit', handleSubmitting);
+
+  function handleSubmitting(event){
+event.preventDefault();
+// console.log(event)
+
+let  name  = event.target.nameId.value
+let minumum = event.target.minId.value
+let maxmum = event.target.maxId.value
+let average = event.target.averageId.value
+// console.log(average);
+
+
+
+
+let newName = new Location (name,minumum,maxmum,average);
+ 
+// console.log(newName);
+
+newName.RandomCustomerNumber();
+newName.CookiesP();
+newName.TotalsShop();
+newName.rendered();
+
+  }
+  
