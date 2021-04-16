@@ -1,15 +1,30 @@
 table , th , td , tr{
     border: solid 2px rgb(70, 66, 66);
-    border-collapse: collapse;
+    border: collapse;
     margin-left: auto ;
     margin-right: auto;
 }
 body{
     background-color: #ffefcf;
+    }
+main article{
+  border: double;
+  margin: 10px;
+  font-family: monospace;
+  background-color: #f8a488;
+  text-align: right;
+  padding-right:20px ;
+  text-decoration: underline;
+  padding-top: 10px;
 }
 
 h2{
-text-align: left  ;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+text-align: right  ;
+padding: 10px ;
+border: double;
+display:inline-block
+
 }
 
  footer{
@@ -30,14 +45,58 @@ text-align: left  ;
     width: 300px;
     line-height: 25px;
     border-top: 20px;  
+    
 }
   
   input {
     height:20px;
     flex: 0 0 140px;
     margin-left: 5px;
+  
+  
   }
 
 #subm{
 margin-right: 100px ;
   }
+
+  #CookesSales{
+width: 47%;
+border-style: double ;
+margin-top: 15px;
+margin-left: 400px;
+  }
+
+  #subm{
+background-color: #bc7058; 
+width: 80px;
+height:25px ;
+border: grey;
+margin-top: 10px;
+margin-left: 190px ;
+margin-bottom: 0px;
+}
+fieldset{
+  display: inline-block;
+  padding: 0%;
+  padding-top: 10px ;
+  margin-bottom: 0px;
+}
+
+#imge{
+  position: relative;
+float: right;
+  right: 30px;
+  bottom: 100px;
+width:40%;
+padding-right: 10px;
+margin-bottom: 0px;
+
+}
+
+
+
+#first1{
+width: 30%;
+  padding-left: 800px;
+}

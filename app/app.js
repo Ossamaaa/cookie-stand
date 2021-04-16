@@ -171,6 +171,41 @@ Location.prototype.final = function () {
   trElement.appendChild(th1Element);
   th1Element.textContent = 'Totals';
 
+
+
+
+
+  const form = document.getElementById('CookesSales');
+
+  form.addEventListener('submit', handleSubmitting);
+
+  function handleSubmitting(event){
+event.preventDefault();
+// console.log(event)
+
+let  nameus  = event.target.nameId.value
+let minumum = event.target.minId.value
+let maxmum = event.target.maxId.value
+let average = event.target.averageId.value
+// console.log(average);
+
+
+
+
+let newName = new Location (nameus,minumum,maxmum,average);
+ 
+// console.log(newName);
+
+newName.RandomCustomerNumber();
+newName.CookiesP();
+newName.TotalsShop();
+newName.rendered();
+
+  }
+
+
+
+
   for (let z = 0; z < time.length; z++) {
 
 
@@ -192,31 +227,9 @@ lima.final();
 
 
 
-const form = document.getElementById('CookesSales');
 
-  form.addEventListener('submit', handleSubmitting);
-
-  function handleSubmitting(event){
-event.preventDefault();
-// console.log(event)
-
-let  name  = event.target.nameId.value
-let minumum = event.target.minId.value
-let maxmum = event.target.maxId.value
-let average = event.target.averageId.value
-// console.log(average);
+// if(newName !== [nameus , minumum ,maxmum , average] ){
+//   alert('please enter valid data');
+// }
 
 
-
-
-let newName = new Location (name,minumum,maxmum,average);
- 
-// console.log(newName);
-
-newName.RandomCustomerNumber();
-newName.CookiesP();
-newName.TotalsShop();
-newName.rendered();
-
-  }
-  
